@@ -7,6 +7,7 @@ describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários',
   beforeEach(() => {
     cy.visit('/')
     homePage.startRegister()
+    cy.viewport(430, 932)
   })
 
   it
