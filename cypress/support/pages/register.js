@@ -1,24 +1,7 @@
 class registerPage{
-
-    addName(fullName){
-        cy.get('[name="fullName"]').type(`${fullName}`)
-    }
-
-    addCpf(cpf){
-        cy.get('[name="cpf"]').type(`${cpf}`)  
-    }
-
+    
     addEmail(email){
         cy.get('[name="email"]').type(`${email}`)
-    }
-
-    addPostalCode(postalcode){
-        cy.get('[name="postalcode"]').type(`${postalcode}`)
-    }
-
-    addCep(cep){
-        cy.get('[value="Buscar CEP"]').click()
-        cy.get('[name="address-number"]').type(`${cep}`)
     }
 
     addDelivery(delivery){

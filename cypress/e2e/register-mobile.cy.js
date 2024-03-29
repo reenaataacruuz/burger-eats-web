@@ -10,13 +10,12 @@ describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários',
     cy.viewport(430, 932)
   })
 
-  it
-  ('Teste de funcionalidade: Cadastro de usuário com método de entrega *Moto*', () => {
-    registerPage.addName('User Name')
-    registerPage.addCpf('01234567890')
+  it('Teste de funcionalidade: Cadastro de usuário com método de entrega *Moto*', () => {
+    cy.fakerName()
+    cy.fakerCPF()
     registerPage.addEmail('user@gmail.com')
-    registerPage.addPostalCode('36032100')
-    registerPage.addCep('10')
+    cy.fakerZipCode()
+    cy.fakerAddressNumber()
     registerPage.addDelivery('moto')
     registerPage.addDocument('cypress/fixtures/hamster.jpg')
     textsValidates.verifyMessagesWarning('warningCNH')
@@ -25,11 +24,11 @@ describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários',
   })
 
   it('Teste de funcionalidade: Cadastro de usuário com método de entrega *Bike Elétrica*', () => {
-    registerPage.addName('User Name')
-    registerPage.addCpf('01234567890')
+    cy.fakerName()
+    cy.fakerCPF()
     registerPage.addEmail('user@gmail.com')
-    registerPage.addPostalCode('36032100')
-    registerPage.addCep('10')
+    cy.fakerZipCode()
+    cy.fakerAddressNumber()
     registerPage.addDelivery('bike')
     registerPage.addDocument('cypress/fixtures/hamster.jpg')
     textsValidates.verifyMessagesWarning('warningCNH')
@@ -38,11 +37,11 @@ describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários',
   })
 
   it('Teste de funcionalidade: Cadastro de usuário com método de entrega *Van/Carro*', () => {
-    registerPage.addName('User Name')
-    registerPage.addCpf('01234567890')
+    cy.fakerName()
+    cy.fakerCPF()
     registerPage.addEmail('user@gmail.com')
-    registerPage.addPostalCode('36032100')
-    registerPage.addCep('10')
+    cy.fakerZipCode()
+    cy.fakerAddressNumber()
     registerPage.addDelivery('carro')
     registerPage.addDocument('cypress/fixtures/hamster.jpg')
     textsValidates.verifyMessagesWarning('warningCNH')
