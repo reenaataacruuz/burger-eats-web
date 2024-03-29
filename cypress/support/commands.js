@@ -1,25 +1,22 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+const faker = require('faker-br')
+
+Cypress.Commands.add('fakerCPF', () => {
+    let meuCpf = faker.br.cpf()
+    cy.get('[name="cpf"]').type(meuCpf)
+})
+
+Cypress.Commands.add('fakerZipCode', () => {
+    let zipCode = faker.address.zipCode()
+    cy.get('[name="postalcode"]').type(zipCode)
+    cy.get('[value="Buscar CEP"]').click()
+})
+
+Cypress.Commands.add('fakerName', () => {
+    let firstName = faker.name.firstName()
+    cy.get('[name="fullName"]').type(firstName)
+})
+
+Cypress.Commands.add('fakerAddressNumber', () => {
+    let AddressNumber = faker.random.number()
+    cy.get('[name="address-number"]').type(AddressNumber)
+})
