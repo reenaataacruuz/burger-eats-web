@@ -26,7 +26,7 @@ describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários',
   it('Teste de funcionalidade: Cadastro de usuário com método de entrega *Bike Elétrica*', () => {
     cy.fakerName()
     cy.fakerCPF()
-    registerPage.addEmail('user@gmail.com')
+    registerPage.addEmail('user1@gmail.com')
     cy.fakerZipCode()
     cy.fakerAddressNumber()
     registerPage.addDelivery('bike')
@@ -39,7 +39,7 @@ describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários',
   it('Teste de funcionalidade: Cadastro de usuário com método de entrega *Van/Carro*', () => {
     cy.fakerName()
     cy.fakerCPF()
-    registerPage.addEmail('user@gmail.com')
+    registerPage.addEmail('user2@gmail.com')
     cy.fakerZipCode()
     cy.fakerAddressNumber()
     registerPage.addDelivery('carro')
