@@ -1,6 +1,6 @@
-import homePage from "../support/pages/home"
-import registerPage from "../support/pages/register"
-import textsValidates from "../support/components/modal"
+import homePage from "../../support/pages/home"
+import registerPage from "../../support/pages/register"
+import textsValidates from "../../support/components/modal"
 
 describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários', () => {
 

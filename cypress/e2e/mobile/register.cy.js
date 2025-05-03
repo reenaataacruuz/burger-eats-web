@@ -1,13 +1,12 @@
-import homePage from "../support/pages/home"
-import registerPage from "../support/pages/register"
-import textsValidates from "../support/components/modal"
+import homePage from "../../support/pages/home"
+import registerPage from "../../support/pages/register"
+import textsValidates from "../../support/components/modal"
 
 describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários', () => {
 
   beforeEach(() => {
     cy.visit('/')
     homePage.startRegister()
-    cy.viewport(430, 932)
   })
 
   it('Teste de funcionalidade: Cadastro de usuário com método de entrega *Moto*', () => {

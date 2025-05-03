@@ -1,6 +1,6 @@
-import homePage from "../support/pages/home"
-import textsValidates from "../support/components/modal"
-import registerPage from "../support/pages/register"
+import homePage from "../../support/pages/home"
+import textsValidates from "../../support/components/modal"
+import registerPage from "../../support/pages/register"
 
 describe('Teste de funcionalidade: Verificando os warning da pagina de registro', ()=>{
 
