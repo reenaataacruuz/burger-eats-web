@@ -1,0 +1,24 @@
+{
+    "startRegister": {
+        "button_register": "strong:contains('Cadastre-se para fazer entregas')"
+    },
+    "addDelivery":{
+        "delivery":{
+            "moto": "span:contains('Moto')",
+            "bike": "span:contains('Bike Elétrica')",
+            "carro": "span:contains('Van/Carro')"
+        }
+    },
+    "finishRegister":{
+        "component": "button.button-success",
+        "text": "Cadastre-se para fazer entregas"
+    },
+    "registerConfirmed":{
+        "modal_success": {
+            "component": "#swal2-html-container"
+        },
+        "close_modal":{
+            "component": "button.swal2-confirm"
+        }
+    }
+}

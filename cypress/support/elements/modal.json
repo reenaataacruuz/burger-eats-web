@@ -1,0 +1,21 @@
+{
+    "verifyMessagesWarning": {
+       "messages": {
+         "warning_cnh": "Atenção: CNH é obrigatória somente para veículos motorizados. Mesmo assim é importante enviar um documento com foto para aprovação do seu cadastro."
+       },
+       "component_warning": "span.alert-warning"
+
+    },
+    "verifyWarningError": {
+        "warning_messages":{
+            "warningName": "É necessário informar o nome",
+            "warningCPF": "É necessário informar o CPF",
+            "warningEmail": "É necessário informar o email",
+            "warningCEP": "É necessário informar o CEP",
+            "warningAddressNumber": "É necessário informar o número do endereço",
+            "warningTypeDelivery": "Selecione o método de entrega",
+            "warningDocument": "Adicione uma foto da sua CNH",
+            "default": "Mensagem padrão"
+        }
+    }
+}
