@@ -1,0 +1,21 @@
+{
+    "addEmail": {
+        "input_email": "[name='email']"
+    },
+    "addDocument":{
+        "submit_file": "input[type='file']"
+    },
+    "fakerCPF":{
+        "input_cpf": "[name='cpf']"
+    }, 
+    "fakerZipCode": {
+        "postal_code": "[name='postalcode']",
+        "search_cep": "[value='Buscar CEP']"
+    },
+    "fakerName": {
+        "full_name": "[name='fullName']"
+    },
+    "fakerAddressNumber": {
+        "number_address": "[name='address-number']"
+    }
+}

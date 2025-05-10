@@ -1,6 +1,8 @@
+import elements from "../elements/elements"
+
 class homePage{
     startRegister(){
-        cy.get('strong:contains("Cadastre-se para fazer entregas")').click()
+        cy.get(elements.home.startRegister.button_register).click()
     }
 }
 

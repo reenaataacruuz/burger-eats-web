@@ -9,7 +9,7 @@ describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários',
     homePage.startRegister()
   })
 
-  it('Teste de funcionalidade: Cadastro de usuário com método de entrega *Moto*', () => {
+  it.only('Teste de funcionalidade: Cadastro de usuário com método de entrega *Moto*', () => {
     cy.fakerName()
     cy.fakerCPF()
     registerPage.addEmail('user@gmail.com')
@@ -17,7 +17,7 @@ describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários',
     cy.fakerAddressNumber()
     registerPage.addDelivery('moto')
     registerPage.addDocument('cypress/fixtures/hamster.jpg')
-    textsValidates.verifyMessagesWarning('warningCNH')
+    textsValidates.verifyMessagesWarning('warning_cnh')
     registerPage.finishRegister()
     registerPage.registerConfirmed()
   })
@@ -30,7 +30,7 @@ describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários',
     cy.fakerAddressNumber()
     registerPage.addDelivery('bike')
     registerPage.addDocument('cypress/fixtures/hamster.jpg')
-    textsValidates.verifyMessagesWarning('warningCNH')
+    textsValidates.verifyMessagesWarning('warning_cnh')
     registerPage.finishRegister()
     registerPage.registerConfirmed()
   })
@@ -43,7 +43,7 @@ describe('Teste de funcionalidade: Realizando cadastro em diferentes cenários',
     cy.fakerAddressNumber()
     registerPage.addDelivery('carro')
     registerPage.addDocument('cypress/fixtures/hamster.jpg')
-    textsValidates.verifyMessagesWarning('warningCNH')
+    textsValidates.verifyMessagesWarning('warning_cnh')
     registerPage.finishRegister()
     registerPage.registerConfirmed()
   })

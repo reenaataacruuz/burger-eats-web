@@ -1,8 +1,8 @@
 {
 "scripts": {
   "start": "npx cypress open",
-  "web": "cross-env AMBIENT=web npx cypress run --headed --spec cypress/e2e/desktop && node tesults-upload.js",
-  "mobile": "cross-env AMBIENT=mobile npx cypress run --headed --spec cypress/e2e/mobile && node tesults-upload.js"
+  "web": "set AMBIENT=web&& npx cypress run --browser chrome",
+  "mobile": "set AMBIENT=mobile&& npx cypress run --browser chrome"
 },
   "devDependencies": {
     "cross-env": "^7.0.3",
