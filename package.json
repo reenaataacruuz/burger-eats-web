@@ -1,15 +1,16 @@
 {
-"scripts": {
-  "start": "npx cypress open",
-  "web": "set AMBIENT=web&& npx cypress run --browser chrome",
-  "mobile": "set AMBIENT=mobile&& npx cypress run --browser chrome"
-},
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "cypress": "^13.7.1"
-  },
-  "dependencies": {
-    "cypress-tesults-reporter": "^1.4.1",
-    "faker-br": "^0.4.1"
-  }
+    "scripts": {
+        "start": "npx cypress open",
+        "web": "set AMBIENT=web&& npx cypress run --browser chrome",
+        "mobile": "set AMBIENT=mobile&& npx cypress run --browser chrome"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "cypress": "^13.7.1",
+        "dotenv": "^17.4.2"
+    },
+    "dependencies": {
+        "cypress-tesults-reporter": "^1.4.1",
+        "faker-br": "^0.4.1"
+    }
 }

@@ -1,9 +1,11 @@
 const { defineConfig } = require("cypress");
+require('dotenv').config();
+
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl:'https://buger-eats-qa.vercel.app',
-    defaultCommandTimeout:5000,
+    baseUrl: 'https://buger-eats-qa.vercel.app',
+    defaultCommandTimeout: 5000,
     env: {
       AMBIENT: process.env.AMBIENT,
     },
